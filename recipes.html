@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Gallery</title>
+    <style>
+        body {
+            /* Font set to Arial, sans-serif per request */
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4; /* Light neutral background */
+            margin: 0;
+            padding: 40px 20px;
+            color: #010025; /* Dark Blue for text */
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .recipe-card {
+            background: #ffffff;
+            border: 1px solid #9BA1A8; /* Grey Border */
+            border-radius: 4px; /* Sharper, professional corners */
+            overflow: hidden;
+            box-shadow: 4px 4px 0px #9BA1A8; /* Stylized Grey Shadow */
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 6px 6px 0px #001489; /* Shadow changes to Blue on hover */
+        }
+
+        .recipe-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 18px;
+            min-height: 45px;
+            text-align: center;
+            background-color: #010025; /* Dark Blue Header */
+            color: #ffffff; /* White text for contrast */
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .recipe-link-container {
+            padding: 20px;
+            text-align: center;
+            background: #ffffff;
+        }
+
+        .recipe-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #DA291C; /* Brand Red */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.85rem;
+            border-radius: 2px;
+            transition: background 0.3s;
+        }
+
+        .recipe-link:hover {
+            background-color: #001489; /* Switches to Blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="video-grid">
+    <div class="recipe-card">
+        <div class="recipe-title">Inspired Yogurt Parfait</div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/eEmYARyjmpE" allowfullscreen></iframe>
+        </div>
+        <div class="recipe-link-container">
+            <a href="https://usfigureskating.org/documents/2026/2/17/NT_Inspired_Yogurt_Parfait_Recipe.pdf" class="recipe-link" target="_blank">RECIPE DETAILS</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <div class="recipe-title">Out of Bed Breakfast</div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/zNhz_Iarkk0" allowfullscreen></iframe>
+        </div>
+        <div class="recipe-link-container">
+            <a href="https://usfigureskating.org/documents/2026/2/17/Recipe_-_Out_of_Bed_Breakfast.pdf" class="recipe-link" target="_blank">RECIPE DETAILS</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <div class="recipe-title">Turkey Wheel</div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/bewkJqpw5ZQ" allowfullscreen></iframe>
+        </div>
+        <div class="recipe-link-container">
+            <a href="https://usfigureskating.org/documents/2026/2/17/turkey_wheel_recipe_final.pdf" class="recipe-link" target="_blank">RECIPE DETAILS</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <div class="recipe-title">Tuna Couscous Salad</div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/F7wkCy74PYk" allowfullscreen></iframe>
+        </div>
+        <div class="recipe-link-container">
+            <a href="https://usfigureskating.org/documents/2026/2/17/Tuna_Couscous_Salad_Recipe.pdf" class="recipe-link" target="_blank">RECIPE DETAILS</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <div class="recipe-title">Stuffed Pepper</div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/P9XnVVaMNHA" allowfullscreen></iframe>
+        </div>
+        <div class="recipe-link-container">
+            <a href="https://usfigureskating.org/documents/2026/2/17/Stuffed_Pepper_Recipe.pdf" class="recipe-link" target="_blank">RECIPE DETAILS</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <div class="recipe-title">Shrimp & Veggie Garlic Noodles</div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Jr0_P1QVjHo" allowfullscreen></iframe>
+        </div>
+        <div class="recipe-link-container">
+            <a href="https://usfigureskating.org/documents/2026/2/17/shrimp_and_veggie_garlic_noodles.pdf" class="recipe-link" target="_blank">RECIPE DETAILS</a>
+        </div>
+    </div>
+
+    <div class="recipe-card">
+        <div class="recipe-title">Custom Trail Mix</div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/YV6fyrjqlv0" allowfullscreen></iframe>
+        </div>
+        <div class="recipe-link-container">
+            <a href="https://usfigureskating.org/documents/2026/2/17/Trail_Mix_Recipe.pdf" class="recipe-link" target="_blank">RECIPE DETAILS</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
